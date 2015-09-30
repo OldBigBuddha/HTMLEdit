@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lifeistech.android.techmemotyou" >
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <mata-date
+            android:name="AA_DB_NAME"
+            android:value="memo.db" />
+
+        <mate-date
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/html" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MemoCreateActivity"
+            android:label="@string/title_activity_memo_create" >
+        </activity>
+        <activity
+            android:name=".MemoDetailActivity"
+            android:label="@string/title_activity_memo_detail" >
+        </activity>
+        <activity
+            android:name=".MyWebView"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".Calculator"
+            android:label="@string/title_activity_calculator" >
+        </activity>
+    </application>
+
+</manifest>

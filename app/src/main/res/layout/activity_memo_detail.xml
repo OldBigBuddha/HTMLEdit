@@ -1,0 +1,203 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_title"
+        android:hint="タイトル" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_memo"
+        android:hint="メモ"
+        android:focusableInTouchMode="true" android:layout_weight="1" android:gravity="top"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;h>"
+                android:id="@+id/hTag"
+                android:onClick="hTag"
+                android:textSize="25dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;p>"
+                android:id="@+id/pTag"
+                android:textSize="25dp"
+                android:onClick="pTag"
+                android:layout_toEndOf="@id/hTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;br>"
+                android:id="@+id/brTag"
+                android:onClick="brTag"
+                android:textSize="25dp"
+                android:layout_toEndOf="@id/pTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;img>"
+                android:id="@+id/imgTag"
+                android:textSize="25dp"
+                android:onClick="imgTag"
+                android:layout_toEndOf="@id/brTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;a>"
+                android:id="@+id/aTag"
+                android:textSize="25dp"
+                android:onClick="aTag"
+                android:layout_toEndOf="@id/imgTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;ruby>"
+                android:id="@+id/rubyTag"
+                android:textSize="25dp"
+                android:onClick="rubyTag"
+                android:layout_toEndOf="@id/aTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;ul>"
+                android:id="@+id/ulTag"
+                android:textSize="25dp"
+                android:onClick="ulTag"
+                android:layout_toEndOf="@id/rubyTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;ol>"
+                android:id="@+id/olTag"
+                android:textSize="25dp"
+                android:onClick="olTag"
+                android:layout_toEndOf="@id/ulTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;li>"
+                android:id="@+id/liTag"
+                android:textSize="25dp"
+                android:onClick="liTag"
+                android:layout_toEndOf="@id/olTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;table>"
+                android:id="@+id/tableTag"
+                android:textSize="25dp"
+                android:onClick="tableTag"
+                android:layout_toEndOf="@id/liTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;tr>"
+                android:id="@+id/trTag"
+                android:textSize="25dp"
+                android:onClick="trTag"
+                android:layout_toEndOf="@id/tableTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;th>"
+                android:id="@+id/thTag"
+                android:textSize="25dp"
+                android:onClick="thTag"
+                android:layout_toEndOf="@id/trTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;td>"
+                android:id="@+id/tdTag"
+                android:textSize="25dp"
+                android:onClick="tdTag"
+                android:layout_toEndOf="@id/thTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;blockquote>"
+                android:id="@+id/blockquoteTag"
+                android:textSize="25dp"
+                android:onClick="blockquoteTag"
+                android:layout_toEndOf="@id/tdTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;hr>"
+                android:id="@+id/hrTag"
+                android:textSize="25dp"
+                android:onClick="hrTag"
+                android:layout_toEndOf="@id/blockquoteTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;s>"
+                android:id="@+id/sTag"
+                android:textSize="25dp"
+                android:onClick="sTag"
+                android:layout_toEndOf="@id/hrTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;u>"
+                android:id="@+id/uTag"
+                android:textSize="25dp"
+                android:onClick="uTag"
+                android:layout_toEndOf="@id/sTag"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;em>"
+                android:id="@+id/emTag"
+                android:textSize="25dp"
+                android:onClick="emTag"
+                android:layout_toEndOf="@id/uTag"/>
+
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

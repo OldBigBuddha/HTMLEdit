@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lifeistech.android.techmemotyou.MemoDetailActivity">
+    <item
+        android:id="@+id/detail_save"
+        android:title="save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/open_webview"
+        android:title="open"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/delet"
+        android:title="delete"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

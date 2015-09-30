@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item
+        android:id="@+id/main_create"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="new create"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dentaku"
+        android:title="jump_Calculator"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

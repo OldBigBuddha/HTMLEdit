@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TechMemotyou</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_memo_create">MemoCreateActivity</string>
+    <string name="title_activity_memo_detail">MemoDetailActivity</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_calculator">Calculator</string>
+</resources>
